@@ -101,3 +101,30 @@ header {
 .footer--nav--container:hover {
   background-color: yellow;
 }
+
+.profile {
+  padding: 40px;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.profile-card > h2 {
+  font-weight: 400;
+}
+
+.profile-card > img {
+  text-align: left;
+}
+
+.profil-text {
+  margin-bottom: 40px;
+}
+
+.darkmode {
+  display: flex;
+  justify-content: space-between;
+}
