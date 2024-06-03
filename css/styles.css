@@ -14,15 +14,17 @@ body {
 
 header {
   position: sticky;
-  background-color: yellow;
   padding: 18px;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 .title {
-  font-weight: 400;
+  font-weight: 300;
   color: black;
 }
+
+/* Question Cards */
 
 .card {
   position: relative;
@@ -31,28 +33,29 @@ header {
   align-items: center;
   gap: 30px;
   padding: 60px 60px 80px 60px;
-  border: 3px solid black;
+  border: 1px solid black;
   margin: 40px;
 }
 
 .card--question {
   text-align: center;
   font-size: 2rem;
+  font-weight: 300;
 }
 
 .card--button {
   padding: 12px 24px 12px 24px;
-  background-color: yellow;
-  border: 5px solid yellow;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
   color: black;
   border-radius: 60px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .card--button:hover {
-  border: 5px solid black;
   background-color: black;
-  color: yellow;
+  border: solid 1px black;
+  color: white;
 }
 
 .card--tag--container {
@@ -72,12 +75,20 @@ header {
   font-size: small;
 }
 
+.card--tag--item:hover {
+  background-color: black;
+  color: white;
+}
+
 .card--bookmark--flag {
   position: absolute;
-  top: -1rem;
+  top: 1rem;
   right: 1rem;
   z-index: 1;
+  width: 20px;
 }
+
+/* Footer Nav */
 
 .footer {
   position: fixed;
@@ -99,32 +110,40 @@ header {
 }
 
 .footer--nav--container:hover {
-  background-color: yellow;
+  background-color: whitesmoke;
 }
+
+/* Profile page */
 
 .profile {
   padding: 40px;
 }
 
+.profile h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
 .profile-card {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
-.profile-card > h2 {
-  font-weight: 400;
+.profile-text {
+  margin-bottom: 1rem;
+  font-weight: 300;
 }
 
-.profile-card > img {
-  text-align: left;
+.profile-buttons {
+  text-align: center;
 }
 
-.profil-text {
-  margin-bottom: 40px;
-}
-
-.darkmode {
+.profile-darkmode {
   display: flex;
   justify-content: space-between;
 }
