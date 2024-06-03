@@ -11,3 +11,15 @@
 body {
   font-family: sans-serif;
 }
+
+header {
+  position: sticky;
+  background-color: aqua;
+  z-index: 1;
+  padding: 18px;
+  text-align: center;
+}
+
+header > h1 {
+  color: blue;
+}
