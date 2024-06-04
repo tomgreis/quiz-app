@@ -4,40 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="css/styles.css"
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script> 
   </head>
   <body>
     <header>
-        <h1 class="title">Quiz-App</h1>
+        <h1 class="header-title">Quiz-App</h1>
     </header>
-    <main>
+    <main class="card-list">
       <section class="card">
-        <p class="card--question">What property flips the axes in flexbox?</p>
-        <a href="#"><button class="card--button">Show Answer</button></a>
-        <div class="card--tag--container">
-          <div class="card--tag--item">#html</div>
-          <div class="card--tag--item">#flexbox</div>
-          <div class="card--tag--item">#css</div>
+        <p class="card__question">What property flips the axes in flexbox?</p>
+        <a href="#"><button class="card__button">Show Answer</button></a>
+        <div class="tag__container">
+          <div class="tag__item">#html</div>
+          <div class="tag__item">#flexbox</div>
+          <div class="tag__item">#css</div>
         </div>
         <img
-            class="card--bookmark--flag"
+            class="card__bookmark"
             src="assets/bookmark-solid.svg"
             width="30px"
             alt="Icon Bookmark"
           />
       </section>
       <section class="card">
-        <p class="card--question">
-          How to remove a remote repository from the local machine?
+        <p class="card__question">
+          How to disconnect a repository from a local folder?
         </p>
-        <a href="#"><button class="card--button">Show Answer</button></a>
-        <div class="card--tag--container">
-          <div class="card--tag--item">#shell</div>
-          <div class="card--tag--item">#git</div>
-          <div class="card--tag--item">#github</div>
+        <a href="#"><button class="card__button">Show Answer</button></a>
+        <div class="tag__container">
+          <div class="tag__item">#shell</div>
+          <div class="tag__item">#git</div>
+          <div class="tag__item">#github</div>
         </div>
         <img
-            class="card--bookmark--flag"
+            class="card__bookmark"
             src="assets/bookmark-solid.svg"
             width="30px"
             alt="Icon Bookmark"
@@ -45,26 +46,26 @@
       </section>
     </main>
     <footer class="footer">
-      <nav class="footer--nav">
-        <div class="footer--nav--container">
-        <a href="index.html" aria-label="Link to Home"><img
-            class="footer--nav--icon"
+      <nav class="nav">
+        <div class="nav__container">
+        <a href="/index.html" aria-label="Link to Home"><img
+            class="nav__icon"
             src="assets/brain-solid.svg"
             width="24px"
             alt="Icon Home"
           />
         </div>
-        <div style="background-color: yellow" class="footer--nav--container">
+        <div class="nav__container" style="background-color: var(--bg-color-highlight)" >
             <a href="/bookmark.html" aria-label="Link to Bookmark"><img
-            class="footer--nav--icon"
+            class="nav__icon"
             src="assets/bookmark-solid.svg"
             width="18px"
             alt="Icon Bookmark"
           />
         </div>
-        <div class="footer--nav--container">
+        <div class="nav__container">
           <a href="/profile.html" aria-label="Link to Profile"><img
-            class="footer--nav--icon"
+            class="nav__icon"
             src="assets/user-solid.svg"
             width="21px"
             alt="Icon Profile"

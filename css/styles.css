@@ -1,4 +1,11 @@
-/* Reset CSS */
+/* Global */
+
+:root {
+  --color-primary: #000000ca;
+  --bg-color-primary: #ffffff;
+  --bg-color-secondary: #f5f5f5;
+  --bg-color-highlight: #ffff00;
+}
 
 *,
 *:before,
@@ -12,19 +19,25 @@ body {
   font-family: sans-serif;
 }
 
+body--dark {
+  background: var(--color-primary);
+}
+
+/* Header */
+
 header {
   position: sticky;
   padding: 18px;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color-primary);
 }
 
-.title {
+.header-title {
   font-weight: 300;
-  color: black;
+  color: var(--color-primary);
 }
 
-/* Question Cards */
+/* Cards */
 
 .card {
   position: relative;
@@ -33,32 +46,43 @@ header {
   align-items: center;
   gap: 30px;
   padding: 60px 60px 80px 60px;
-  border: 1px solid black;
+  border: 1px solid var(--color-primary);
   margin: 40px;
+  background: var(--bg-color-primary);
 }
 
-.card--question {
+.card__question {
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
 }
 
-.card--button {
+.card__button {
   padding: 12px 24px 12px 24px;
-  background-color: whitesmoke;
-  border: 1px solid whitesmoke;
+  background: var(--bg-color-secondary);
+  border: 1px solid var(--bg-color-secondary);
   color: black;
   border-radius: 60px;
   font-size: 1.1rem;
 }
 
-.card--button:hover {
-  background-color: black;
+.card__button:hover {
+  background: black;
   border: solid 1px black;
-  color: white;
+  color: var(--bg-color-primary);
 }
 
-.card--tag--container {
+.card__bookmark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+  width: 20px;
+}
+
+/* Tags */
+
+.tag__container {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -68,49 +92,43 @@ header {
   gap: 10px;
 }
 
-.card--tag--item {
-  background-color: #f1f1f1;
+.tag__item {
+  background: #f1f1f1;
   border-radius: 4px;
   padding: 6px 12px 6px 12px;
   font-size: small;
 }
 
-.card--tag--item:hover {
-  background-color: black;
-  color: white;
+.tag__item:hover {
+  background: black;
+  color: var(--bg-color-primary);
 }
 
-.card--bookmark--flag {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1;
-  width: 20px;
-}
-
-/* Footer Nav */
+/* Footer */
 
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: white;
+  background: var(--bg-color-primary);
   z-index: 2;
 }
 
-.footer--nav {
+/* Navbar */
+
+.nav {
   display: flex;
   justify-content: space-around;
 }
 
-.footer--nav--container {
+.nav__container {
   width: 100%;
   text-align: center;
   padding: 10px;
 }
 
-.footer--nav--container:hover {
-  background-color: whitesmoke;
+.nav__container:hover {
+  background: var(--bg-color-secondary);
 }
 
 /* Profile page */
@@ -126,20 +144,21 @@ header {
   margin-top: 2rem;
 }
 
-.profile-card {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4rem;
+.profile__card {
+  display: grid;
+  grid-template-columns: fr1 fr1;
+  gap: 2rem;
+  /* border: 1px solid; */
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-.profile-text {
+.profile__text {
   margin-bottom: 1rem;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
-.profile-buttons {
+.profile__button {
   text-align: center;
 }
 
