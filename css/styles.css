@@ -19,8 +19,9 @@ body {
   font-family: sans-serif;
 }
 
-body--dark {
+.body--dark {
   background: var(--color-primary);
+  color: #ffffff;
 }
 
 /* Header */
@@ -162,7 +163,7 @@ header {
   text-align: center;
 }
 
-.profile-darkmode {
+.profile__settings {
   display: flex;
   justify-content: space-between;
 }
