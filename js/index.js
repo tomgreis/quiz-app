@@ -1,9 +1,22 @@
-const bodyElement = document.querySelector('[data-js="body"]');
-const buttonDarkmode = document.querySelector('[data-js="button-darkmode"]');
+// Bookmark toggeln
 
-// console.log(bodyElement);
-// console.log(buttonDarkmode);
+const cardBookmark = document.querySelector('[data-js="cardBookmark"]');
+const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]');
 
-buttonDarkmode.addEventListener("click", () => {
-  bodyElement.classList.toggle("body--dark");
+cardBookmark.addEventListener("click", () => {
+  if (bookmarkIcon.src.includes("bookmark-regular.svg")) {
+    bookmarkIcon.src = "assets/bookmark-solid.svg";
+  } else {
+    bookmarkIcon.src = "assets/bookmark-regular.svg";
+  }
+});
+
+// Answer toggeln
+
+const cardElement = document.querySelector('[data-js="cardElement"]');
+const cardAnswer = document.querySelector('[data-js="cardAnswer"]');
+const buttonAnswer = document.querySelector('[data-js="buttonAnswer"]');
+
+buttonAnswer.addEventListener("click", () => {
+  cardAnswer.classList.toggle("card__answer");
 });

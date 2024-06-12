@@ -12,21 +12,23 @@
       <a href="index.html" alt"Zur Startseite"><h1 class="header-title">Quiz-App</h1></a>
     </header>
     <main class="card-list">
-      <section class="card">
+
+      <section class="card" data-js="cardElement">
         <p class="card__question">What property flips the axes in flexbox?</p>
-        <a href="#"><button class="card__button">Show Answer</button></a>
+        <a href="#"><button class="card__button" type="button" name="button-answer" data-js="buttonAnswer">Show Answer</button></a>
+        <p class="card__answer" data-js="cardAnswer">flex-direction: column</p>
         <div class="tag__container">
           <div class="tag__item">#html</div>
           <div class="tag__item">#flexbox</div>
           <div class="tag__item">#css</div>
         </div>
-        <img
-            class="card__bookmark"
-            src="assets/bookmark-regular.svg"
-            width="30px"
-            alt="Icon Bookmark"
-          />
+        <div class="card__bookmark" data-js="cardBookmark">
+          <img data-js="bookmarkIcon" name="bookmark-icon"
+        src="assets/bookmark-regular.svg"
+        alt="Icon Bookmark"
+      /></div>
       </section>
+
       <section class="card">
         <p class="card__question">
           How to disconnect a repository from a local folder?
