@@ -21,7 +21,7 @@ cardBookmark.addEventListener("click", () => {
 //   }
 // }
 
-cardBookmark.addEventListener("click", toggleBookmark);
+// cardBookmark.addEventListener("click", toggleBookmark);
 
 // Toggle hidden field + toggle button text
 
