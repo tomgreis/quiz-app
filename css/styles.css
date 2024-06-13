@@ -15,7 +15,8 @@
   padding: 0;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
@@ -81,13 +82,27 @@ header {
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
+  color: black;
+  font-family: sans-serif;
 }
 
 .card__answer {
   position: absolute;
   text-align: center;
+  z-index: 1;
   visibility: hidden;
-  z-index: 20;
+}
+
+.card__new {
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+  background: whitesmoke;
+  border: 1px solid grey;
+
+  /* font-size: 2rem;
+  font-weight: 300;
+  border: none; */
 }
 
 .card__button {
@@ -242,11 +257,11 @@ header {
     flex-direction: row;
     gap: 40px;
   }
-  body::before {
+  /* body::before {
     content: "min-width: 600px is active";
     display: block;
     color: red;
-  }
+  } */
 }
 
 @media (min-width: 900px) {
@@ -257,9 +272,9 @@ header {
     flex-direction: row;
     gap: 40px;
   }
-  body::before {
+  /* body::before {
     content: "min-width: 900px is active";
     display: block;
     color: red;
-  }
+  } */
 }

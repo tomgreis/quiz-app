@@ -5,36 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/index.js" defer></script> 
+    <script src="js/indexForm.js" defer></script> 
   </head>
   <body data-js="body">
     <header>
-       <a href="index.html" alt="Zur Startseite"><h1 class="header-title">QA Profile</h1></a> 
+      <a href="index.html" alt="Zur Startseite"><h1 class="header-title">QA Add Cards</h1></a>
     </header>
-    <main class="profile">
-      <section>
-
-      <ul class="profile__header">
-        <li><img class="profile__pic" src="https://pbs.twimg.com/profile_images/1306281224017764352/86GzTTZM_400x400.jpg" alt="Profilbild Tom Greis"/></li>
-        <li><h2>Tom Greis</h2></li>
-      </ul>
-
-      <div class="profile__text">
-        <h2>Über mich</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-      </div>
-
-      <div class="profile__button">
-        <button>Fragen</button>
-        <button>Counter</button>
-      </div>
-
-        <h2>Settings</h2>
-        <div class="profile__settings">
-        <p>Dark mode</p>
-        <button type="button" data-js="button-darkmode">Darkmode</button>
-      </div>
-      </section>
+    <main>
+      <form class="card" data-js="form">
+        <label for="your-question" >Your Question</label>
+        <textarea class="card__new"id="your-question" name="yourQuestion" data-js="yourQuestion" placeholder="Your Question"></textarea>
+        <span data-js="yourQuestionRemainingCaracters">150</span>
+        <label for="your-answer"  >Your Answer</label>
+        <textarea class="card__new" id="your-answer" name="yourAnswer" data-js="yourAnswer" placeholder="Your Answer"></textarea>
+        <label for="your-tag" >Your Tag</label>
+        <input class="card__new" type="text" id="your-tag" name="yourTag" data-js="yourTag" placeholder="Your Tag" />
+        <button type="submit" name="button-submit" id="button-submit" data-js="addCardButton">Add New Card</button>
+        <button type="button" name="button-remove" id="button-remove" data-js="removeCardButton">Clear Cards</button>
+      </form>
+      <ol data-js="card-container">
+        <li class="card-container__message" data-js="card-container__message"></li>
+      </ol>
     </main>
     <footer class="footer">
       <nav class="nav">
@@ -46,7 +37,7 @@
             alt="Icon Home"
           />
         </div>
-        <div class="nav__container">
+        <div class="nav__container" style="background-color: var(--bg-color-highlight)" >
             <a href="/bookmark.html" aria-label="Link to Bookmark"><img
             class="nav__icon"
             src="assets/bookmark-solid.svg"
@@ -62,7 +53,7 @@
           alt="Icon Add Cards"
         />
       </div>
-        <div class="nav__container" style="background-color: var(--bg-color-highlight)" >
+        <div class="nav__container">
           <a href="/profile.html" aria-label="Link to Profile"><img
             class="nav__icon"
             src="assets/user-solid.svg"

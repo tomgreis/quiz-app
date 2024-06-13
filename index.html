@@ -9,14 +9,14 @@
   </head>
   <body data-js="body">
     <header>
-      <a href="index.html" alt"Zur Startseite"><h1 class="header-title">Quiz-App</h1></a>
+      <a href="index.html" alt="Zur Startseite"><h1 class="header-title">Quiz-App</h1></a>
     </header>
     <main class="card-list">
 
       <section class="card" data-js="cardElement">
         <p class="card__question">What property flips the axes in flexbox?</p>
         <a href="#"><button class="card__button" type="button" name="button-answer" data-js="buttonAnswer">Show Answer</button></a>
-        <p class="card__answer" data-js="cardAnswer">flex-direction: column</p>
+        <p class="card__answer--hidden" data-js="cardAnswer">flex-direction: column</p>
         <div class="tag__container">
           <div class="tag__item">#html</div>
           <div class="tag__item">#flexbox</div>
@@ -65,6 +65,14 @@
             alt="Icon Bookmark"
           />
         </div>
+        <div class="nav__container">
+          <a href="/form.html" aria-label="Link to Add Cards"><img
+          class="nav__icon"
+          src="assets/square-plus-solid.svg"
+          width="22px"
+          alt="Icon Add Cards"
+        />
+      </div>
         <div class="nav__container">
           <a href="/profile.html" aria-label="Link to Profile"><img
             class="nav__icon"
