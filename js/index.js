@@ -14,14 +14,14 @@ cardBookmark.addEventListener("click", () => {
 });
 
 // function toggleBookmark() {
-//   if (bookmarkIcon.src.includes("bookmark-regular.svg")) {
+//   if (bookmarkIcon.src.endsWith("bookmark-regular.svg")) {
 //     bookmarkIcon.src = "assets/bookmark-solid.svg";
 //   } else {
 //     bookmarkIcon.src = "assets/bookmark-regular.svg";
 //   }
-// };
+// }
 
-// cardBookmark.addEventListener("click", toggleBookmark);
+cardBookmark.addEventListener("click", toggleBookmark);
 
 // Toggle hidden field + toggle button text
 

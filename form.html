@@ -14,12 +14,14 @@
     <main>
       <form class="card" data-js="form">
         <label for="your-question" >Your Question</label>
-        <textarea class="card__new"id="your-question" name="yourQuestion" data-js="yourQuestion" placeholder="Your Question"></textarea>
-        <span data-js="yourQuestionRemainingCaracters">150</span>
-        <label for="your-answer"  >Your Answer</label>
-        <textarea class="card__new" id="your-answer" name="yourAnswer" data-js="yourAnswer" placeholder="Your Answer"></textarea>
+        <textarea class="card__new"id="your-question" name="yourQuestion" data-js="yourQuestion" placeholder="Your Question" maxlength="100"></textarea>
+        <p class="card__new--counter">
+          <span data-js="remainingCharacters" name="remainingCharacters" id="remaining-characters" >100</span>
+        </p>
+        <label for="your-answer" >Your Answer</label>
+        <textarea class="card__new card__new--small" id="your-answer" name="yourAnswer" data-js="yourAnswer" placeholder="Your Answer" maxlength="100"></textarea>
         <label for="your-tag" >Your Tag</label>
-        <input class="card__new" type="text" id="your-tag" name="yourTag" data-js="yourTag" placeholder="Your Tag" />
+        <input class="card__new card__new--small" type="text" id="your-tag" name="yourTag" data-js="yourTag" placeholder="Your Tag" />
         <button type="submit" name="button-submit" id="button-submit" data-js="addCardButton">Add New Card</button>
         <button type="button" name="button-remove" id="button-remove" data-js="removeCardButton">Clear Cards</button>
       </form>

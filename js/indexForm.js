@@ -46,12 +46,12 @@ clearButton.addEventListener("click", () => {
 
 // Add counter
 
-// const inputYourQuestion = document.querySelector('[data-js="yourQuestion"]');
-// const inputYourQuestionRemainingCharacters = document.querySelector(
-//   '[data-js="yourQuestionRemainingCharacters"]'
-// );
+const inputYourQuestion = document.querySelector('[data-js="yourQuestion"]');
+const remainingCharacters = document.querySelector(
+  '[data-js="remainingCharacters"]'
+);
 
-// inputYourQuestion.addEventListener("input", (event) => {
-//   const inputYourQuestionLength = event.target.value.length;
-//   yourQuestionRemainingCharacters.innerText = 150 - inputYourQuestionLength;
-// });
+inputYourQuestion.addEventListener("input", (event) => {
+  const inputYourQuestionLength = event.target.value.length;
+  remainingCharacters.innerText = 100 - inputYourQuestionLength;
+});
