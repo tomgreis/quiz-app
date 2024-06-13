@@ -93,7 +93,7 @@ header {
 .card__answer {
   /* position: absolute;
   text-align: center; */
-  z-index: 2;
+  /* z-index: 2; */
   visibility: hidden;
 }
 
